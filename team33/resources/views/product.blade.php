@@ -13,7 +13,7 @@
 <body>
     @include('nav&footer/nav')
 
-    <h1>Product Page</h1>
+    <h1>Products Page</h1>
 
     @include('nav&footer/footer')
 </body>

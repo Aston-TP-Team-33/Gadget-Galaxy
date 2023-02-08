@@ -1,3 +1,5 @@
+<link href="{{ asset('css/nav&footer.css?v=').time()}}" rel="stylesheet" type="text/css">
+
 <nav>
     <div class="topnav">
         <a href="{{('homepage')}}" class="active">Homepage</a>
