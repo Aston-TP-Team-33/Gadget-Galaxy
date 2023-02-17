@@ -17,19 +17,23 @@
         <div>
             <h4>Socials</h4>
 
-            <a href="https://twitter.com/?lang=en" target="_blank" class="footer_img_line">
+            <a href="https://twitter.com/?lang=en" target="_blank">
                 <img src="{{asset('images/twitter.png')}}" class="footer_images" />
             </a>
 
-            <a href="https://github.com/" target="_blank" class="footer_img_line">
+            <a href="https://github.com/" target="_blank">
                 <img src="{{asset('images/github-sign.png')}}" class="footer_images" />
             </a>
 
-            <a href="https://en-gb.facebook.com/" target="_blank" class="footer_img_line">
+            <a href="https://uk.linkedin.com/" target="_blank">
+                <img src="{{asset('images/linkedin.png')}}" class="footer_images" />
+            </a>
+
+            <a href="https://en-gb.facebook.com/" target="_blank">
                 <img src="{{asset('images/facebook.png')}}" class="footer_images" />
             </a>
 
-            <a href="https://www.instagram.com/" target="_blank" class="footer_img_line">
+            <a href="https://www.instagram.com/" target="_blank">
                 <img src="{{asset('images/instagram.png')}}" class="footer_images" />
             </a>
         </div>

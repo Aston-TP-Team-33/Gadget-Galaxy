@@ -2,8 +2,9 @@
 #nav_btn_loc {
     display: flex;
     justify-content: space-between;
-    background-color: #4c4c4c;
+    background-color: #ffffff;
     padding-right: 40px;
+    /* box-shadow: 0 4px 5px -2px gray; */
 }
 
 ul {
@@ -17,15 +18,16 @@ ul li{
 
 ul li .nav-txt{
     display: block;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     text-align: center;
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 
 }
 
 .drop-txt{
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 5px;
 }
 
@@ -36,20 +38,49 @@ ul li ul.dropdown li{
 ul li ul.dropdown{
     padding: 5px;
     padding-top: 15px;
-    background: #4c4c4c;
+    background: #ffffff;
     position: absolute;
     display: none;
     justify-content: center;
 
 }
 
-ul li a:hover{
+/* ul li a:hover{
     text-decoration: underline;
     color: black;
     border-radius: 5px;
 }
 
+
 ul li:hover ul.dropdown{
+    display: block;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+} */
+
+ul li a:hover {
+    color: black;
+    border-radius: 5px;
+}
+
+ul li a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+ul li a:hover::before {
+    transform: scaleX(1);
+  }
+
+ul li:hover ul.dropdown {
     display: block;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -106,13 +137,14 @@ a {
 
 .footer_txt,
 h4 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: small;
     text-decoration: none;
     text-align: center;
 }
 
 footer {
-    background-color: #b0b0b0;
+    background-color: #ffffff;
     margin-top: auto;
+    /* box-shadow: 0 4px 5px 5px gray; */
 }
