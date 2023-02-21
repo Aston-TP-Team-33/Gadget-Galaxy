@@ -1384,6 +1384,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/ui/zipball/05ff7ac1eb55e2dfd10edcfb18c953684d693907",
                 "reference": "05ff7ac1eb55e2dfd10edcfb18c953684d693907",
+
                 "shasum": ""
             },
             "require": {
@@ -1394,6 +1395,7 @@
                 "php": "^8.0"
             },
             "require-dev": {
+
                 "orchestra/testbench": "^7.0|^8.0",
                 "phpunit/phpunit": "^9.3"
             },
@@ -1430,9 +1432,11 @@
                 "ui"
             ],
             "support": {
+
                 "source": "https://github.com/laravel/ui/tree/v4.2.1"
             },
             "time": "2023-02-17T09:17:24+00:00"
+
         },
         {
             "name": "league/commonmark",
