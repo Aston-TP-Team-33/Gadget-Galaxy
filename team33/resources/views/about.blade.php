@@ -14,6 +14,7 @@
     @include('nav&footer/nav')
 
     <h1>About Us</h1>
+    <h2> aaaa </h2>
 
     @include('nav&footer/footer')
 </body>
