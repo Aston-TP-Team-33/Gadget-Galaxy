@@ -14,7 +14,7 @@ h1{
 }
 
 body {
-    background-color: aqua;
+    background-color: rgb(40, 42, 61);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
