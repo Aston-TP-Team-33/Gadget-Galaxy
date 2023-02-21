@@ -14,6 +14,38 @@
     @include('nav&footer/nav')
 
     <h1>About Us</h1>
+<div class="about-us-container">
+
+  <div class="about-us">
+    <h2>Our Story</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nulla nec congue ullamcorper. Vestibulum non mi eget augue efficitur faucibus nec quis mi. Suspendisse vel lacinia nisl. </p>
+    <p>Mauris et varius velit, sit amet dictum enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc auctor turpis et dolor maximus efficitur. Vivamus malesuada nisi vel sem venenatis sollicitudin.</p>
+  </div>
+
+  <div class="about-us">
+    <h2>Our Team</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nulla nec congue ullamcorper. Vestibulum non mi eget augue efficitur faucibus nec quis mi. Suspendisse vel lacinia nisl. </p>
+    <p>Mauris et varius velit, sit amet dictum enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc auctor turpis et dolor maximus efficitur. Vivamus malesuada nisi vel sem venenatis sollicitudin.</p>
+  </div>
+
+  <div class="about-us">
+    <h2>Our Mission</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nulla nec congue ullamcorper. Vestibulum non mi eget augue efficitur faucibus nec quis mi. Suspendisse vel lacinia nisl. </p>
+  </div>
+
+  <div class="about-us">
+    <h2>Our Values</h2>
+    <ul>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Consectetur adipiscing elit</li>
+      <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+      <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+    </ul>
+  </div>
+
+</div>
+
+
 
     @include('nav&footer/footer')
 </body>
