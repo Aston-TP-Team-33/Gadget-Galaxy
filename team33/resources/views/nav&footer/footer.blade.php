@@ -21,14 +21,6 @@
                 <img src="{{asset('images/twitter.png')}}" class="footer_images" />
             </a>
 
-            <a href="https://github.com/" target="_blank">
-                <img src="{{asset('images/github-sign.png')}}" class="footer_images" />
-            </a>
-
-            <a href="https://uk.linkedin.com/" target="_blank">
-                <img src="{{asset('images/linkedin.png')}}" class="footer_images" />
-            </a>
-
             <a href="https://en-gb.facebook.com/" target="_blank">
                 <img src="{{asset('images/facebook.png')}}" class="footer_images" />
             </a>

@@ -28,6 +28,27 @@ Route::get('/product', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/smartphones', function () {
+    return view('smartphones');
+});
+
+Route::get('/laptops', function () {
+    return view('laptops');
+});
+
+Route::get('/tablets', function () {
+    return view('tablets');
+});
+
+Route::get('/tvs', function () {
+    return view('tvs');
+});
+
+Route::get('/cameras', function () {
+    return view('cameras');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

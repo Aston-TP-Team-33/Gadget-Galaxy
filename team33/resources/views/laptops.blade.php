@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ asset('css/app.css?v=').time()}}" rel="stylesheet" type="text/css">
     <link rel="icon" href="images/icon_logo.svg">
-    <title>Homepage</title>
+    <title>Laptops</title>
 </head>
 
 <body>
     @include('nav&footer/nav')
 
-    <h1>Homepage</h1>
+    <h1>Laptops</h1>
 
     @include('nav&footer/footer')
 </body>
