@@ -13,7 +13,7 @@
 
     <h1>Contact Us</h1>
 
-    <form method="POST" action="{{ route('contact.send') }}">
+    <form method="POST" action="">
         @csrf
         <div>
             <label for="name">Name:</label>
