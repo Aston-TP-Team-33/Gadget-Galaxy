@@ -1,4 +1,3 @@
-<link href="{{ asset('css/nav&footer.css?v=').time()}}" rel="stylesheet" type="text/css">
 
 
 <link href="{{ asset('css/nav&footer.css?v=').time()}}" rel="stylesheet" type="text/css">
