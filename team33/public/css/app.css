@@ -11,30 +11,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
-/* slide show*/
-.slideshow {
-    position: relative;
-    height: 80px;
-    overflow: hidden;
-  }
-  
-  .slideshow-text {
-    position: absolute;
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .slideshow-text.active {
-    opacity: 1;
-  }
-
 /* ---Hero section--- */
 .hero {
     background-image: url("images/Spacebackground2.gif");
@@ -79,18 +55,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
    
 }
-/*--banner section--*/
 
-.banners {
-    background-color: #f5f5f5;
-  }
-  
-  .banners img {
-    width: 50%;
-    height: 600px;
-  }
-  
-  
 
 /* ---featured product senction--- */
 .featured-products {
@@ -125,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .featured-products .block img:hover {
     transform: scale(1.3);
-    transition: all 0.9s ease-in-out;
+    transition: all 0.6s ease-in-out;
   }  
   .featured-products .block-body {
     text-align: center;
@@ -222,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: white;
 }
 
 .categories .col-6:hover {

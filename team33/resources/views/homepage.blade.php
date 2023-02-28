@@ -13,11 +13,6 @@
 
 <body>
     @include('nav&footer/nav')
-    <!-- Slide Show -->
-        <div class="slideshow">
-         <p class="slideshow-text">Free Deliveries on all Orders for the next 24h</p>
-         <p class="slideshow-text">Up to 50% off on various products</p>
-        </div>
      <!-- Hero section -->
     <section class="hero" style="background-image: url('images/Spacebackground2.gif');">
         <div class="container">
@@ -31,25 +26,6 @@
         </div>
     </section>
     
-   <!-- Banners --> 
-  < <section class="banners">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <a href="#"><img src="images/banner1.png" alt="Banner 1"></a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <a href="#"><img src="banner2.jpg" alt="Banner 2"></a>
-      </div>
-      <div class="col-md-6">
-        <a href="#"><img src="banner3.jpg" alt="Banner 3"></a>
-      </div>
-    </div>
-  </div>
-</section>
-
  <!-- Featured products section -->
 <section class="featured-products">
   <div class="container">
@@ -150,18 +126,3 @@
        
 
  @include('nav&footer/footer')
-
-<script>
-  const texts = document.querySelectorAll('.slideshow-text');
-  let index = 0;
-
-  setInterval(() => {
-    texts[index].classList.remove('active');
-    index = (index + 1) % texts.length;
-    texts[index].classList.add('active');
-  }, 2000);
-</script>
-
-</body>
-
-</html>
