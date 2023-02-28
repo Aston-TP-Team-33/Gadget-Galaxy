@@ -19,7 +19,7 @@
          <p class="slideshow-text">Up to 50% off on various products</p>
         </div>
      <!-- Hero section -->
-    <section class="hero" style="background-image: url('images/Galaxy.jpg');">
+    <section class="hero" style="background-image: url('images/Spacebackground2.gif');">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -32,11 +32,11 @@
     </section>
     
    <!-- Banners --> 
-    <section class="banners">
+  <!--  <section class="banners">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <a href="#"><img src="banner1.jpg" alt="Banner 1"></a>
+        <a href="#"><img src="images/banner1.png" alt="Banner 1"></a>
       </div>
     </div>
     <div class="row">
@@ -48,7 +48,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
  <!-- Featured products section -->
 <section class="featured-products">
