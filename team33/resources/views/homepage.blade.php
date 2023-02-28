@@ -32,7 +32,7 @@
     </section>
     
    <!-- Banners --> 
-  <!--  <section class="banners">
+  < <section class="banners">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -48,7 +48,7 @@
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
  <!-- Featured products section -->
 <section class="featured-products">
