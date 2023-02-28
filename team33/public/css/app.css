@@ -11,13 +11,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
-/* Hero section */
+/* ---Hero section--- */
 .hero {
     background-image: url("images/Galaxy.jpg");
     background-size: cover;
     background-position: center;
     color: #fff;
-    padding: 150px 0;
+    padding: 10px 0;
 }
 
 .hero h1 {
@@ -56,35 +56,74 @@ h1, h2, h3, h4, h5, h6 {
    
 }
 
-/* Featured products section */
+/* slide show*/
+.slideshow {
+  position: relative;
+  height: 80px;
+  overflow: hidden;
+}
+
+.slideshow-text {
+  position: absolute;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slideshow-text.active {
+  opacity: 1;
+}
+
+  
+
+/* ---featured product senction--- */
 .featured-products {
-    background-color: #f8f8f8;
+    background-color: rgb(40, 42, 61);
     padding: 50px 0;
   }
   .featured-products h2 {
     text-align: center;
     margin-bottom: 50px;
+    color: white;
   }
-  .featured-products .card {
+  .featured-products .block {
     margin-bottom: 50px;
     border: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: white;
   }
-  .featured-products .card:hover {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  .featured-products h5 {
+    text-align: center;
+    color: black;
   }
-  .featured-products .card img {
+  .featured-products p {
+    text-align: center;
+    color: black;
+  }
+  .featured-products .block:hover {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  }
+  .featured-products .block img {
     width: 100%;
     height: 200px;
     object-fit: cover;
   }
-  .featured-products .card-body {
+  .featured-products .block-body {
     text-align: center;
+    padding: 20px;
   }
-  .featured-products .card-title {
+  .featured-products .block-title {
     font-weight: bold;
     margin-bottom: 10px;
   }
-  .featured-products .card-text {
+  .featured-products .block-text {
     font-size: 18px;
     margin-bottom: 20px;
   }
@@ -93,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
     border-color: #fff;
     color: #fff;
     font-size: 18px;
-    padding: 10px 40px;
+    padding: 10px 30px;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
   }
@@ -130,12 +169,24 @@ h1, h2, h3, h4, h5, h6 {
   .featured-products .bottom-row {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
   }
   
-
-/* Categories section */
+  /* Spacing between the blocks */
+  .featured-products .block {
+    margin-bottom: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .featured-products .block {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+  
+/* ---Categories section--- */
 .categories {
-    background-color: #141418;
+    background-color: rgb(40, 42, 61);
     color: #fff;
     padding: 100px 0;
 }
@@ -143,22 +194,43 @@ h1, h2, h3, h4, h5, h6 {
 .categories h2 {
     font-size: 36px;
     margin-bottom: 50px;
-}
-
-.categories .col-md-3 a {
-    border: 2px solid #fff;
-    border-radius: 5px;
-    display: block;
-    font-size: 24px;
-    margin-bottom: 30px;
-    padding: 30px 20px;
     text-align: center;
-    text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
 }
 
-.categories .col-md-3 a:hover {
-    background-color: #fff;
-    color: #000;
-    text-decoration: none;
+.categories .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+.categories .col-6 {
+    max-width: 200px;
+    margin: 0 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.categories .col-6:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.categories .col-6 img {
+    max-width: 120px;
+    margin-bottom: 30px;
+}
+
+.categories .col-6 a {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+
