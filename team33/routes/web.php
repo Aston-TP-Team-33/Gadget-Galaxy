@@ -28,7 +28,6 @@ Route::get('/product', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
-
 Route::get('/smartphones', function () {
     return view('smartphones');
 });
