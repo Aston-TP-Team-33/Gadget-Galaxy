@@ -109,7 +109,7 @@
         <div class="block">
           <img src="images/S22Ultra.jpg" alt="Product 6">
           <div class="block-body">
-            <h5 class="block-title">Samsung Galaxy S22 Ultra</h5>
+            <h5 class="block-title">Samsung Galaxy S23 Ultra</h5>
             <p class="block-text">£1249</p>
             <a href="#" class="btn btn-primary">Buy Now</a>
           </div>
