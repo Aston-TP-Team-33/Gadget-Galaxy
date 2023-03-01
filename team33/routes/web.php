@@ -37,6 +37,7 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+
 Route::get('/userAccount', function () {
     return view('userAccount');
 });
@@ -49,6 +50,26 @@ Route::get('/logout', 'App\Http\Controllers\HomeController@logout');
 
 Route::get('/home', function () {
     return view('homepage');
+
+Route::get('/smartphones', function () {
+    return view('smartphones');
+});
+
+Route::get('/laptops', function () {
+    return view('laptops');
+});
+
+Route::get('/tablets', function () {
+    return view('tablets');
+});
+
+Route::get('/tvs', function () {
+    return view('tvs');
+});
+
+Route::get('/cameras', function () {
+    return view('cameras');
+
 });
 
 Auth::routes();
