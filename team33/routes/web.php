@@ -50,6 +50,7 @@ Route::get('/logout', 'App\Http\Controllers\HomeController@logout');
 
 Route::get('/home', function () {
     return view('homepage');
+});
 
 Route::get('/smartphones', function () {
     return view('smartphones');
