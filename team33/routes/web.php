@@ -31,9 +31,7 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/product', function () {
-    return view('product');
-});
+Route::get('/product', [App\Http\Controllers\ProductsController::class, 'index'])->name('productsPage');
 
 Route::get('/contact', function () {
     return view('contact');
@@ -45,9 +43,7 @@ Route::get('/userAccount', function () {
 
 
 
-Route::get('/adminAccount', function () {
-    return view('adminAccount');
-});
+
 
 Route::get('/logout', 'App\Http\Controllers\HomeController@logout');
 
@@ -70,3 +66,17 @@ Route::middleware(['auth', 'AdminAccess:admin'])->group(function () {
   
     Route::get('/admin', [App\Http\Controllers\HomeController::class, 'admin'])->name('adminAccount');
 });
+
+
+
+
+
+/*To handle basket and more in the User Account*/
+Route::post('/home/{id}', 'App\Http\Controllers\BasketController@basket');  /*1*/
+Route::post('update/{id}', [App\Http\Controllers\BasketController::class, 'update']); /*2*/
+Route::post('updatequantity/{id}', [App\Http\Controllers\ProductsController::class, 'updatequantity']);  /*for admin still to do*/
+Route::post('updateStatus/{id}', [App\Http\Controllers\BasketController::class, 'updateStatus']);
+Route::post('remove/{id}', [App\Http\Controllers\BasketController::class, 'remove']);
+Route::post('checkout', [App\Http\Controllers\BasketController::class, 'addToOrders']);
+Route::get('/adminAccount', [App\Http\Controllers\HomeController::class, 'admin']);
+Route::get('/contactForm', 'App\Http\Controllers\QueriesController@contactForm');
