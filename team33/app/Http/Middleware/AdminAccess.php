@@ -15,10 +15,12 @@ class AdminAccess
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
     public function handle(Request $request, Closure $next, $type)
-    {
-        if(auth()->user()->type == $type){
+    {   
+        if(auth()->user()->type != 1){
             return $next($request);
         }
+
+        
           
         return response()->json(['Permission Denied']);
     }
