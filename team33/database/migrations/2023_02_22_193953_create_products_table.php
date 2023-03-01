@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('description');
             $table->integer('quantity');
             $table->string('image');
+            $table->string('category');
         });
     }
 
