@@ -17,39 +17,25 @@
 
     <h1>Products Page</h1>
     <div class="product-container">
+    
+    @foreach($storeData as $product)    <!-- 1 -->
+        <div class="product">
+        <img src="{{$product->image}}" alt="">  
+        <!--  <img width="200px" src="images/facebook.png" alt="product image"> -->
+        <h2>product title: {{$product->title}}</h2> 
+        <p>Description: {{$product->description}}</p>
+        <p2>Quantity: {{$product->quantity}}</p2>
+        <p3>Price: £{{$product->price}}</p3>
 
-    <div class="product">
-        <img width="200px" src="images/facebook.png" alt="product image">
-        <h2>product title </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-        <p2>cost </p2>
-        <p3>category</p3>
-        <form id="item" method="post"> </form>
+        <form action="{{url('home',$product->id)}}" method="POST">
+      @csrf
+      <input type= "number" value="1" min="1" max="{{$product->quantity}}" class="selectQuantity" name="quantity">
+
+      <button type="submit" onclick="alert('Basket Updated Successfully')" class="btn">Add to Basket</button>
+
+      </form>
     </div>
-
-    <div class="product">
-        <img width="200px" src="images/facebook.png" alt="product image">
-        <h2>product title </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-        <p2>cost </p2>
-        <p3>category</p3>
-        <form id="item" method="post"> </form>
-    </div>
-
-    <div class="product">
-        <img width="200px" src="images/facebook.png" alt="product image">
-        <h2>product title </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-        <p2>cost </p2>
-        <p3>category</p3>
-        <form id="item" method="post"> </form>
-    </div>
-
-
-
+     @endforeach
 </div>
 
     @include('nav&footer/footer')
