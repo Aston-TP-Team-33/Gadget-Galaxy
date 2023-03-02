@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="{{ asset('css/app.css?v=').time()}}" rel="stylesheet" type="text/css">
+  <link rel="icon" href="images/icon_logo.svg">
   <title>Homepage</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -121,23 +122,23 @@
       <div class="row justify-content-center">
         <div class="col-6 col-sm-4 col-md-2 mb-4 text-center">
           <img src="images/phoneicon.png" alt="Smartphones" class="img-fluid mb-2">
-          <a href="#" class="text-dark font-weight-bold">Smartphones</a>
+          <a href="smartphones" class="text-dark font-weight-bold">Smartphones</a>
         </div>
         <div class="col-6 col-sm-4 col-md-2 mb-4 text-center">
           <img src="images/laptopicon.png" alt="Laptops" class="img-fluid mb-2">
-          <a href="#" class="text-dark font-weight-bold">Laptops</a>
+          <a href="laptops" class="text-dark font-weight-bold">Laptops</a>
         </div>
         <div class="col-6 col-sm-4 col-md-2 mb-4 text-center">
           <img src="images/tableticon2.png" alt="Tablets" class="img-fluid mb-2">
-          <a href="#" class="text-dark font-weight-bold">Tablets</a>
+          <a href="tablets" class="text-dark font-weight-bold">Tablets</a>
         </div>
         <div class="col-6 col-sm-4 col-md-2 mb-4 text-center">
           <img src="images/tvicon.png" alt="TVs" class="img-fluid mb-2">
-          <a href="#" class="text-dark font-weight-bold">TVs</a>
+          <a href="tvs" class="text-dark font-weight-bold">TVs</a>
         </div>
         <div class="col-6 col-sm-4 col-md-2 mb-4 text-center">
           <img src="images/cameraicon.png" alt="Cameras" class="img-fluid mb-2">
-          <a href="#" class="text-dark font-weight-bold">Cameras</a>
+          <a href="cameras" class="text-dark font-weight-bold">Cameras</a>
         </div>
       </div>
     </div>
