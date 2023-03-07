@@ -18,14 +18,15 @@ class AdminUserSeeder extends Seeder
     {
         $users = [
             [
-                'name' => 'Admin',
-                'email' => 'group33@gmail.com',
-                'type' => 1,
-                'password' => bcrypt('Gadget-Galaxy'),
+
+               'name'=>'Admin',
+               'email'=>'group33@gmail.com',
+               'type'=>1,
+               'password'=> bcrypt('Gadget-Galaxy'),
             ],
 
         ];
-
+    
         foreach ($users as $key => $user) {
             User::create($user);
         }
