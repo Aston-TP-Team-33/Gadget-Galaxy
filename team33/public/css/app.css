@@ -1,22 +1,256 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Global styles */
 
 html,
 body {
-    margin: 0%;
-}
-
-h1{
-    text-align: center;
-    width: 100%;
-    background-color: brown;
+  margin: 0%;
 }
 
 body {
-    background-color: aqua;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #141418;
+  color: #fff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+}
+
+
+
+/* ---Hero section--- */
+.hero {
+  background-image: url("images/Spacebackground2.gif");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px #000;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px #000;
+  text-align: center;
+}
+
+.hero .btn {
+  background-color: #0e0e10;
+  border-color: #fff;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero .btn:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+
+}
+
+/*--banner section--*/
+
+.banners {
+  background-color: #f5f5f5;
+}
+
+.banners img {
+  width: 50%;
+  height: 600px;
+}
+
+
+
+/* ---featured product senction--- */
+.featured-products {
+  background-color: white;
+  padding: 50px 0;
+}
+
+.featured-products h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: rgb(40, 42, 61);
+}
+
+.featured-products .block {
+  margin-bottom: 50px;
+  border: none;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: white;
+  box-shadow: 0px 5px 10px rgb(40, 42, 61);
+}
+
+.featured-products h5 {
+  text-align: center;
+  color: black;
+}
+
+.featured-products p {
+  text-align: center;
+  color: black;
+}
+
+.featured-products .block img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.featured-products .block img:hover {
+  transform: scale(1.3);
+  transition: all 0.9s ease-in-out;
+}
+
+.featured-products .block-body {
+  text-align: center;
+  padding: 20px;
+}
+
+.featured-products .block-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.featured-products .block-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.featured-products .btn-primary {
+  background-color: #0e0e10;
+  border-color: #fff;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.featured-products .btn-primary:hover {
+  background-color: #fff;
+  color: #0e0e10;
+}
+
+.featured-products .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.featured-products .col-md-3 {
+  width: 33.33%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .featured-products .col-md-3 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .featured-products .col-md-3 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.featured-products .top-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.featured-products .bottom-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+/* Spacing between the blocks */
+.featured-products .block {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .featured-products .block {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+/* ---Categories section--- */
+.categories {
+  background-color: rgb(40, 42, 61);
+  color: #fff;
+  padding: 100px 0;
+}
+
+.categories h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.categories .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.categories .col-6 {
+  max-width: 200px;
+  margin: 0 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.categories .col-6:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+}
+
+.categories .col-6 img {
+  max-width: 120px;
+  margin-bottom: 30px;
+}
+
+.categories .col-6 a {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
