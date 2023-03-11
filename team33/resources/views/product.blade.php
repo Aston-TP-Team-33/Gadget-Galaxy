@@ -16,7 +16,29 @@
 <body>
     @include('nav&footer/nav')
 
-    <h1>Products Page</h1>
+    <h1><?php
+    $pTitle = explode("/" , parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
+    $getTitle = array_pop($pTitle);
+    if ($getTitle == 'smartphones'){
+        echo('Smartphones');
+    }
+    else if ($getTitle == 'laptops'){
+        echo('Laptops');
+    }
+    else if ($getTitle == 'tablets'){
+        echo('Tablets');
+    }
+    else if ($getTitle == 'tvs'){
+        echo('TVs');
+    }
+    else if ($getTitle == 'cameras'){
+        echo('Cameras');
+    }
+    else{
+        echo('Products Page');
+    }
+    ?></h1>
+
     <div class="product-container">
 
         @foreach($storeData as $product) <!-- 1 -->
