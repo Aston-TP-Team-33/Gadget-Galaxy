@@ -6,17 +6,18 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    <link rel="icon" href="images/icon_logo.svg">
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <!-- <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet"> -->
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
+@include('nav&footer/nav')
     <div id="app">
         
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -64,9 +65,10 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <!-- <main class="py-4"> -->
             @yield('content')
-        </main>
+        <!-- </main> -->
     </div>
+    @include('nav&footer/footer')
 </body>
 </html>
