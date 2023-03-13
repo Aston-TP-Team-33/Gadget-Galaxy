@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public",
+    "\\resources",
+    "\\resources\\views",
+    "\\resources\\views\\auth",
+    "\\resources\\views\\nav&footer"
+  ],
+  "SelectedNode": "\\resources\\views\\nav&footer\\nav.blade.php",
+  "PreviewInSolutionExplorer": false
+}

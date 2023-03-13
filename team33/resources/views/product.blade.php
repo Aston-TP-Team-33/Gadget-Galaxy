@@ -18,6 +18,7 @@
         <h1 class="product-page-header">Products Page</h1>
 </section>
     <div class="product-container">
+
         @foreach($storeData as $product)    <!-- 1 -->
             <div class="product">
                 <img src="{{$product->image}}" alt="" class="product-image">  
