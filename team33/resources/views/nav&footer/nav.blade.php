@@ -2,20 +2,40 @@
 
 <nav>
   <section id="nav_btn_loc">
-    <a href="{{('homepage')}}"><img src="{{asset('images/small-logo.png')}}" class="logo" /></a> 
+    <a href="{{route('homepage')}}"><img src="{{asset('images/small-logo.png')}}" class="logo" /></a>
     <ul class="topnav">
-      <li><a href="{{('homepage')}}" class="nav-txt">Homepage</a></li>
-      <li><a href="{{('product')}}" class="nav-txt">Products</a>
+      <li><a href="{{route('homepage')}}" class="nav-txt">Homepage</a></li>
+      <li><a href="{{route('productsPage')}}" class="nav-txt">Products</a>
         <ul class="dropdown">
-          <li class="drop-txt"><a href="{{'smartphones'}}" class="drop-txt">Smartphones</a></li>
-          <li class="drop-txt"><a href="{{'laptops'}}" class="drop-txt">Laptops</a></li>
-          <li class="drop-txt"><a href="{{'tablets'}}" class="drop-txt">Tablets</a></li>
-          <li class="drop-txt"><a href="{{'tvs'}}" class="drop-txt">TVs</a></li>
-          <li class="drop-txt"><a href="{{'cameras'}}" class="drop-txt">Cameras</a></li>
+          <li class="drop-txt">
+            <form action="{{route('product.category',['category'=>'smartphones'])}}" method="GET">
+              <a href="" class="drop-txt-btn"> <button class="drop-txt-btn" type="submit">Smartphones</button></a>
+            </form>
+          </li>
+          <li class="drop-txt">
+            <form action="{{route('product.category',['category'=>'laptops'])}}" method="GET">
+              <a href="" class="drop-txt-btn"> <button class="drop-txt-btn" type="submit"> Laptops</button></a>
+            </form>
+          </li>
+          <li class="drop-txt">
+            <form action="{{route('product.category',['category'=>'tablets'])}}" method="GET">
+              <a href="" class="drop-txt-btn"> <button class="drop-txt-btn" type="submit"> Tablets</button></a>
+            </form>
+          </li>
+          <li class="drop-txt">
+            <form action="{{route('product.category',['category'=>'tvs'])}}" method="GET">
+              <a href="" class="drop-txt-btn"> <button class="drop-txt-btn" type="submit"> TVs</button></a>
+            </form>
+          </li>
+          <li class="drop-txt">
+            <form action="{{route('product.category',['category'=>'cameras'])}}" method="GET">
+              <a href="" class="drop-txt-btn"> <button class="drop-txt-btn" type="submit"> Cameras</button></a>
+            </form>
+          </li>
         </ul>
       </li>
-      <li><a href="{{('contact')}}" class="nav-txt">Contact Us</a></li>
-      <li><a href="{{('about')}}" class="nav-txt">About Us</a></li>
+      <li><a href="{{route('contact')}}" class="nav-txt">Contact Us</a></li>
+      <li><a href="{{route('about')}}" class="nav-txt">About Us</a></li>
     </ul>
     <ul class="topnav">
       @guest <!-- if user is loged in, this will not appear  -->

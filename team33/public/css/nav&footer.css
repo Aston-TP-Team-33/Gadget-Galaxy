@@ -9,8 +9,8 @@
 
 .logo{
     padding: 5px;
-    width: 125px;
-    height: 40px;
+    max-width: 125px;
+    max-height: 40px;
 }
 
 ul {
@@ -35,6 +35,18 @@ ul li .nav-txt{
 .drop-txt{
     color: rgb(0, 0, 0);
     padding: 5px;
+    
+}
+
+.drop-txt-btn {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #000000;
+    padding-top: 2px;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 ul li ul.dropdown li{

@@ -19,9 +19,8 @@
 
 <body>
    
-    @include('nav&footer/nav')
 
-    <h1>Login Page</h1>
+    <!-- <h1>Login Page</h1> -->
 
 
     <div class="container">
@@ -95,7 +94,7 @@
     </div>
 </body>
 
-<footer>
+<!-- <footer>
     <br>
     <br>
     <br>
@@ -107,7 +106,7 @@
 </footer>
 
 
- 
+  -->
 
 </html>
 @endsection
