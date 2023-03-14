@@ -4,7 +4,7 @@
     justify-content: space-between;
     background-color: #ffffff;
     padding-right: 40px;
-    /* box-shadow: 0 4px 5px -2px gray; */
+    box-shadow: 0 4px 5px -2px gray;
 }
 
 .logo{
@@ -124,14 +124,14 @@ a {
 
 .footer_txt,
 h4 {
-    color: rgb(0, 0, 0);
-    font-size: small;
+    color: rgb(255, 255, 255);
+    font-size: large;
     text-decoration: none;
     text-align: center;
 }
 
 footer {
-    background-color: #ffffff;
+    background-color: #000000;
     margin-top: auto;
     /* box-shadow: 0 4px 5px 5px gray; */
 }
