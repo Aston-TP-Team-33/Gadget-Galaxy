@@ -13,10 +13,11 @@
 
 </head>
 
-<body>
+<body class="product-page">
     @include('nav&footer/nav')
 
-    <h1><?php
+<section class="product-page-space" style="background-image: url('images/Spacebackground2.gif');">
+    <h1 class="product-page-header"><?php
     $pTitle = explode("/" , parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
     $getTitle = array_pop($pTitle);
     if ($getTitle == 'smartphones'){
@@ -38,7 +39,7 @@
         echo('Products Page');
     }
     ?></h1>
-
+</section>
     <div class="product-container">
 
         @foreach($storeData as $product) <!-- 1 -->
@@ -56,14 +57,17 @@
 
                 <button type="submit" onclick="alert('Basket Updated Successfully')" class="btn">Add to Basket</button>
 
+
             </form>
         </div>
         @endforeach
+
 
         <!-- <form action="{{route('product.category',['category'=>'smartphones'])}}" method="GET">
         <button type="submit">Smartphone</button>
      </form> -->
     </div>
+
 
     @include('nav&footer/footer')
 </body>
