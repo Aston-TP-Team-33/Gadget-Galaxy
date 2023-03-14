@@ -190,7 +190,7 @@ h6 {
   justify-content: space-between;
   margin-bottom: 50px;
 
-
+}
 /* --Products Page --*/
 
 .product-page{
@@ -198,13 +198,13 @@ h6 {
 }
 
 .product-page-header{
-  color:white;
+  color:rgb(0, 0, 0);
   text-align: center;
   font-size:500%;
 }
 
 .product-page-space {
-  background-image: url("images/Spacebackground2.gif");
+  /* background-image: url("primg/Spacebackground2.gif"); */
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -294,7 +294,6 @@ h6 {
   background-color: #fff;
   color: #0e0e10;
   cursor:pointer;
-}
 }
 
 .featured-products .bottom-row {
