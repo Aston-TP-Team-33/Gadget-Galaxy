@@ -19,35 +19,18 @@
         <input type="search" name="search" value="" placeholder="Search Product">
         <button type="submit">Search</button>
     </form>
-
-
+    
     <section class="product-page-space">
         <!-- <img src="{{asset('primg/Spacebackground2.gif')}}" style="background-size: cover;
   background-position: center;"> -->
         <h1 class="product-page-header">
-            <?php
-            $pTitle = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
-            $getTitle = array_pop($pTitle);
-            if ($getTitle == 'smartphones') {
-                echo ('Smartphones');
-            } else if ($getTitle == 'laptops') {
-                echo ('Laptops');
-            } else if ($getTitle == 'tablets') {
-                echo ('Tablets');
-            } else if ($getTitle == 'tvs') {
-                echo ('TVs');
-            } else if ($getTitle == 'cameras') {
-                echo ('Cameras');
-            } else {
-                echo ('Products Page');
-            }
-            ?>
+            Searched Product
         </h1>
     </section>
 
     <div class="product-container">
 
-        @foreach($storeData as $product) <!-- 1 -->
+        @foreach($retProduct as $product) <!-- 1 -->
         <div class="product">
             <img src="{{url($product->image)}}" alt="" class="product-image">
             <!--  <img width="200px" src="images/facebook.png" alt="product image"> -->
