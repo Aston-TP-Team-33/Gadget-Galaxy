@@ -75,6 +75,15 @@ Route::get('/cameras', function () {
 
 });
 
+
+// Route::get('/searchProduct', function () {
+//     return view('searchProduct');
+
+// });
+
+Route::get('/searchProduct', [App\Http\Controllers\ProductsController::class, 'searchProduct'])->name('searchProduct');
+
+
 Auth::routes();
 
 /*User and Admin redirect linking sysytem*/
