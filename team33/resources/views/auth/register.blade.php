@@ -16,7 +16,7 @@
     @extends('layouts.app')
 
 <body>
-     <!-- <h1>Login Page</h1> -->
+    
 
 
 
@@ -103,6 +103,8 @@
     <br>
     @include('nav&footer/footer')
 </footer> -->
+
+ <!-- <h1>End</h1> -->
 
 
 </html>
