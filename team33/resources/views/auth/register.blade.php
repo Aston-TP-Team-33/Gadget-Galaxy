@@ -16,6 +16,7 @@
     @extends('layouts.app')
 
 <body>
+     <!-- <h1>Login Page</h1> -->
 
 
 

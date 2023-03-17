@@ -1,6 +1,7 @@
 <link href="{{ asset('css/app.css?v=').time()}}" rel="stylesheet" type="text/css">
 <!DOCTYPE html>
 <html lang="en">
+
     
 
 
@@ -10,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ asset('css/app.css?v=').time()}}" rel="stylesheet" type="text/css">
     <title>Login Page</title>
+    <!--Login title -->
 
 </head>
 
