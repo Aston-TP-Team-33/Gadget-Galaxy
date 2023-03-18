@@ -190,7 +190,7 @@ h6 {
   justify-content: space-between;
   margin-bottom: 50px;
 
-
+}
 /* --Products Page --*/
 
 .product-page{
@@ -212,10 +212,10 @@ h6 {
 }
 
 .product-container{
-  display: inline-grid;
-  grid-template-columns: auto auto auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
   padding: 1%;
-  gap: 1%;
+  gap: 0.5%;
   padding-bottom: 15%;
 }
 
@@ -295,7 +295,7 @@ h6 {
   color: #0e0e10;
   cursor:pointer;
 }
-}
+
 
 .featured-products .bottom-row {
   display: flex;
