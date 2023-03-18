@@ -198,13 +198,13 @@ h6 {
 }
 
 .product-page-header{
-  color:white;
+  color:rgb(0, 0, 0);
   text-align: center;
   font-size:500%;
 }
 
 .product-page-space {
-  background-image: url("images/Spacebackground2.gif");
+  /* background-image: url("primg/Spacebackground2.gif"); */
   background-size: cover;
   background-position: center;
   color: #fff;

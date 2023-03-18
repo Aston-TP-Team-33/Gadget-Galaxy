@@ -25,17 +25,19 @@ Route::get('/', function () {
 
 Route::get('/homepage', function () {
     return view('homepage');
-});
+})->name('homepage');
 
 Route::get('/about', function () {
     return view('about');
-});
+})->name('about');
 
 Route::get('/product', [App\Http\Controllers\ProductsController::class, 'index'])->name('productsPage');
 
+Route::get('product/{category}', [App\Http\Controllers\ProductsController::class, 'catFun'])->name('product.category');
+
 Route::get('/contact', function () {
     return view('contact');
-});
+})->name('contact');
 
 
 Route::get('/userAccount', function () {
@@ -72,6 +74,15 @@ Route::get('/cameras', function () {
     return view('cameras');
 
 });
+
+
+// Route::get('/searchProduct', function () {
+//     return view('searchProduct');
+
+// });
+
+Route::get('/searchProduct', [App\Http\Controllers\ProductsController::class, 'searchProduct'])->name('searchProduct');
+
 
 Auth::routes();
 
