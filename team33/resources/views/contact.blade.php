@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ asset('css/app.css?v=').time()}}" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/icon_logo.svg">
     <title>Contact Us</title>
 </head>
 <body>
@@ -13,25 +14,21 @@
 
     <h1>Contact Us</h1>
 
-    <form method="POST" action="{{ route('contact.send') }}">
-        @csrf
-        <div>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" required>
-        </div>
+    <form action = "{{url('/contactForm')}}" class="form-container">
+   @csrf
 
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required>
-        </div>
+       <label for="email">Email</label>
+       <input type="text" id="email" placeholder="Enter Email" class="box" name="email1" required = "Please Insert Email">
 
-        <div>
-            <label for="query">Query:</label>
-            <textarea name="query" id="query" required></textarea>
-        </div>
+       <label for="name">Name</label>
+       <input type="text" id="name" placeholder="Name" class="box" name="name1" required = "Please Insert Name">
 
-        <button type="submit">Send</button>
-    </form>
+       <label for="query">Query</label>
+       <input type="text" id="query" placeholder="Query" class="box" name="query1" required = "Please Insert Your Query">
+
+       <button type="submit" onclick="alert('Query Sent Successfully')" class="btn">Send Message</button>
+       
+   </form>
 
     @include('nav&footer/footer')
 </body>
