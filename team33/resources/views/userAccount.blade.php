@@ -9,137 +9,140 @@
     <title>Homepage</title>
 </head>
 
-<body>
+<body class="my-account">
     @include('nav&footer/nav')
 
     <h1>My Account</h1>
-    
-</style>
-<section class="products">
-<div class="container">
-<br>
-<div class="row"><h1>My Basket</h1></div>
-<table>
-<br>
-<tr>
-<td style="font-size: 20px;" ><div class""><h2>&nbsp Product &nbsp</h2></div></div></td>
-<td style="font-size: 20px;" ><div class""><h2>&nbsp Quantity &nbsp</h2></div></div></td>
-<td style="font-size: 20px;" ><div class""><h2>&nbsp Price &nbsp</h2></div></div></td>
-</tr>
-@foreach($basket_orders as $basket)
-<tr>
-<td>&nbsp{{$basket['product_name']}}</td>
 
+    <section class="products">
+        <div class="container">
+            <br>
+            <div class="row">
+                <h2>My Basket</h2>
+            </div>
+            <table>
+                <br>
+                <tr>
+                    <td class="table-header">&nbsp Product &nbsp</td>
+                    <td class="table-header">&nbsp Quantity &nbsp</td>
+                    <td class="table-header">&nbsp Price &nbsp</td>
+                </tr>
+                @foreach($basket_orders as $basket)
+                <tr>
+                    <td>&nbsp{{$basket['product_name']}}</td>
 
-<!--basket view-->
-<form action="{{url('update',$basket->id)}}" method="POST">
-      @csrf
+                    <!--basket view-->
+                    <form action="{{url('update',$basket->id)}}" method="POST">
+                        @csrf
 
-<td><input type= "number" value= "{{$basket['quantity']}}" min="1" class="form" name="quantity"></td>
-<td>£{{$basket['price']}}</td>
+                        <td>
+                            <input type="number" value="{{$basket['quantity']}}" min="1" class="form" name="quantity">
+                        </td>
+                        <td>£{{$basket['price']}}</td>
 
+                        <!--update button-->
+                        <td>
+                            <button type="submit" onclick="alert('Quantity Updated Successfully')" class="btn">Update</button>
+                        </td>
+                    </form>
 
+                    <!--Remove Button-->
 
-<!--update button-->
-<td><button type="submit" onclick="alert('Quantity Updated Successfully')" class="btn">Update</button></td>
-      </form>
+                    <form action="{{url('remove',$basket->id)}}" method="POST">
+                        @csrf
 
-      <!--Remove Button-->
+                        <td>
+                            <button type="submit" onclick="alert('Product Removed')" class="btn">Remove</button>
+                        </td>
+                    </form>
 
-      <form action="{{url('remove',$basket->id)}}" method="POST">
-      @csrf
+                    <!--end form-->
 
-<td><button type="submit" onclick="alert('Product Removed')" class="btn">Remove</button></td>
-      </form>
+                </tr>
+                @endforeach
+            </table>
 
+            <table>
+                <tr>
+                <td><h3 class="total-text">Total = &nbsp</td>
+                <td>£{{$total}}</td>
+                </tr>
+            </table>
+        </div>
+        <br>
 
-<!--end form-->
+        <!--Delivery Address take input-->
+        <div class="container">
+            <br>
+            <div class="row">
+                <h2> Checkout </h2>
+            </div>
 
-</tr>
-@endforeach
-</table>
+            <table>
+                <tr>
+                    <td class="table-header">Full Name</td>
+                    <td class="table-header">House Number</td>
+                    <td class="table-header">Street Address</td>
+                    <td class="table-header">PostCode</td>
+                    <td class="table-header">City</td>
+                    <td class="table-header">Card Number</td>
+                    <td class="table-header">Expiry Date</td>
+                    <td class="table-header">CCV</td>
+                    <td class="table-header">Checkout</td>
+                </tr>
 
-<table>
-<tr>
-<td><h3>Total = &nbsp</td><td>£{{$total}}</td>
-</tr>
+                <form action="{{url('checkout')}}" method="POST">
+                    @csrf
+                    <tr>
+                        <td><input type="text" value="" class="form" name="name"></td>
+                        <td><input type="text" value="" class="form" name="house_number"></td>
+                        <td><input type="text" value="" class="form" name="street_address"></td>
+                        <td><input type="text" value="" class="form" name="post_code"></td>
+                        <td><input type="text" value="" class="form" name="city"></td>
+                        <td><input type="text" value="" class="form" name="card_number"></td>
+                        <td><input type="date" value="" class="form" name="expiry_date"></td>
+                        <td><input type="password" value="" class="form" name="cvv"></td>
+                        <br>
 
+                        <!--Submit Order-->
+                        <td>
+                            <button type="submit" onclick="alert('Thank You For Shopping with Us!')" class="btn">Checkout</button>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+        <br>
+        <!--Show user's orders-->
 
-</table>
-</div>
-<br>
-
-<!--Delivery Address take input-->
-<div class="container">
-<br>
-<div class="row"><h1> Checkout </h1></div>
-
-<table>
-<tr>
-<td style="font-size: 20px;"><div class"col"><div class="checkoutSec"><h3>Full Name</h3></div></div></td>
-<td style="font-size: 20px;"><div class"col"><div class="checkoutSec"><h3>House Number</h3></div></div></td>
-<td style="font-size: 20px;"><div class"col"><div class="checkoutSec"><h3>Street Address</h3></div></div></td>
-<td style="font-size: 20px;"><div class"col"><div class="checkoutSec"><h3>PostCode</h3></div></div></td>
-<td style="font-size: 20px;"><div class"col"><div class="checkoutSec"><h3>City</h3></div></div></td>
-<td style="font-size: 20px;"><div class"col"><div class="checkoutSec"><h3>Card Number</h3></div></div></td>
-<td style="font-size: 20px;"><div class"col"><div class="checkoutSec"><h3>Expiry Date</h3></div></div></td>
-<td style="font-size: 20px;"><div class"col"><div class="checkoutSec"><h3>CCV</h3></div></div></td>
-
-</tr>
-
-
-
-<form action="{{url('checkout')}}" method="POST">
-      @csrf
-<tr>
-<td><input type= "text" value= "" class="form" name="name"></td>
-<td><input type= "text" value= "" class="form" name="house_number"></td>
-<td><input type= "text" value= "" class="form" name="street_address"></td>
-<td><input type= "text" value= "" class="form" name="post_code"></td>
-<td><input type= "text" value= "" class="form" name="city"></td>
-<td><input type= "text" value= "" class="form" name="card_number"></td>
-<td><input type= "date" value= "" class="form" name="expiry_date"></td>
-<td><input type= "password" value= "" class="form" name="cvv"></td>
-<br>
-
-<!--Submit Order-->
-<td><button type="submit" onclick="alert('Thank You For Shopping with Us!')" class="btn">Checkout</button></td>
-</form>
-
-
-</tr>
-
-</table>
-</div>
-<br>
-<!--Show user's orders-->
-
-<div class="container">
-<br>
-<div class="row"><h1>My Order History</h1></div>
-<table>
-<tr>
-<td style="font-size: 20px;"><div class"col"><div class="Myorderhistory"><h3>&nbsp Product &nbsp</h3></div></div></td>
-<td style="font-size: 20px;"><div class"col"><div class="Myorderhistory"><h3>&nbsp Quantity &nbsp</h3></div></div></td>
-<td style="font-size: 20px;"><div class"col"><div class="Myorderhistory"><h3>&nbsp Price &nbsp</h3></div></div></td>
-<td style="font-size: 20px;"><div class"col"><div class="Myorderhistory"><h3>&nbsp Status &nbsp</h3></div></div></td>
-<td style="font-size: 20px;"><div class"col"><div class="Myorderhistory"><h3>&nbsp Order Date: &nbsp</h3></div></div></td>
-</tr>
-@foreach($orders_list as $order)
-<tr>
-<td>{{$order['product_name']}}</td>
-<td>{{$order['quantity']}}</td>
-<td>£{{$order['price']}}</td>
-<td>{{$order['order_status']}}</td>
-<td>{{$order['created_at']}}</td>
-</tr>
-@endforeach
-</table>
-</div>
-
-</div>
+        <div class="container">
+            <br>
+            <div class="row">
+                <h2>My Order History</h2>
+            </div>
+            <table>
+                <tr>
+                    <td class="table-header">&nbsp Product &nbsp</td>
+                    <td class="table-header">&nbsp Quantity &nbsp</td>
+                    <td class="table-header">&nbsp Price &nbsp</td>
+                    <td class="table-header">&nbsp Status &nbsp</td>
+                    <td class="table-header">&nbsp Order Date: &nbsp</td>
+                </tr>
+                @foreach($orders_list as $order)
+                <tr>
+                    <td>{{$order['product_name']}}</td>
+                    <td>{{$order['quantity']}}</td>
+                    <td>£{{$order['price']}}</td>
+                    <td>{{$order['order_status']}}</td>
+                    <td>{{$order['created_at']}}</td>
+                </tr>
+                @endforeach
+            </table>
+        </div>
+    </section>
 
     @include('nav&footer/footer')
 </body>
 
 </html>
+
