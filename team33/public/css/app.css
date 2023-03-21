@@ -211,12 +211,54 @@ h6 {
   padding: 10px 0;
 }
 
+.product-searchbar-container {
+  padding: 0.5% 0.5%;
+  min-width: 5%;
+  max-width: 33%;
+  color: white;
+  border: 1px grey;
+  border-radius: 50px;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 33%;
+  background:rgb(48, 47, 47);
+  background-image: linear-gradient(to bottom right, rgb(243, 228, 242), rgb(241, 241, 241))
+
+}
+
+.product-searchbar{
+background: rgba(255, 255, 255, 0.01);
+border: 0;
+font-size:30px;
+color:rgb(0, 0, 0);
+outline-width: 0px;
+}
+
+.product-searchbar-btn{
+  background: rgba(255, 255, 255, 0.01);
+  border: 0;
+  font-size:50px;
+  color:rgb(77, 1, 255);
+  margin-left: 28%;
+
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  
+}
+
+.product-searchbar-btn:hover{
+cursor: pointer;
+color: rgb(146, 4, 241);
+}
+
 .product-container{
   display: grid;
   grid-template-columns: 33% 33% 33%;
   padding: 1%;
   gap: 0.5%;
-  padding-bottom: 15%;
+  padding-bottom: 20%;
 }
 
 .product-image{
@@ -296,7 +338,6 @@ h6 {
   cursor:pointer;
 }
 
-
 .featured-products .bottom-row {
   display: flex;
   justify-content: space-between;
@@ -313,6 +354,10 @@ h6 {
     margin-right: 0;
     margin-left: 0;
   }
+}
+
+.alt-product-header{
+  color:black;
 }
 
 /* ---Categories section--- */
