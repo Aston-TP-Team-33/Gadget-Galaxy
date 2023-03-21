@@ -33,5 +33,23 @@ class ProductsController extends Controller
     
         return redirect('/adminAccount');
        
+    }
+
+    public function catFun($p_cat)
+    {
+        $storeData=Products::query()->where('category',$p_cat)->get();
+        return view('product', compact('storeData'));
+        // return view('productsPage',compact('product'));
+    }
+
+    public function searchProduct(Request $findName)
+    {
+        if($findName -> search){
+            $retProduct=Products::where('title','LIKE','%'.$findName -> search.'%')->get();
+            return view('searchProduct', compact('retProduct'));
+        }else{
+            return redirect()->route('/product');
         }
+    }
+
 }
