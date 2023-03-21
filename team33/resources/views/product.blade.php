@@ -16,7 +16,6 @@
 
 <body class="product-page">
     @include('nav&footer/nav')
-<<<<<<< HEAD
     
 
 
