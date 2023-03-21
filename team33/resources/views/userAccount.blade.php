@@ -26,6 +26,8 @@
                     <td class="table-header">&nbsp Product &nbsp</td>
                     <td class="table-header">&nbsp Quantity &nbsp</td>
                     <td class="table-header">&nbsp Price &nbsp</td>
+                    <td class="table-header">&nbsp Update &nbsp</td>
+                    <td class="table-header">&nbsp Remove &nbsp</td>
                 </tr>
                 @foreach($basket_orders as $basket)
                 <tr>
