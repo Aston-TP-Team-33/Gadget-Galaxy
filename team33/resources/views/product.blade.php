@@ -9,41 +9,49 @@
     <link href="{{ asset('css/app.css?v=').time()}}" rel="stylesheet" type="text/css">
     <link rel="icon" href="images/icon_logo.svg">
     <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
 
 <body class="product-page">
     @include('nav&footer/nav')
-    <form method="GET" action="{{url('searchProduct')}}" role="search">
-        <input type="search" name="search" value="" placeholder="Search Product">
-        <button type="submit">Search</button>
-    </form>
+    
 
 
-    <section class="product-page-space">
-        <!-- <img src="{{asset('primg/Spacebackground2.gif')}}" style="background-size: cover;
-  background-position: center;"> -->
-        <h1 class="product-page-header">
-            <?php
-            $pTitle = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
-            $getTitle = array_pop($pTitle);
-            if ($getTitle == 'smartphones') {
-                echo ('Smartphones');
-            } else if ($getTitle == 'laptops') {
-                echo ('Laptops');
-            } else if ($getTitle == 'tablets') {
-                echo ('Tablets');
-            } else if ($getTitle == 'tvs') {
-                echo ('TVs');
-            } else if ($getTitle == 'cameras') {
-                echo ('Cameras');
-            } else {
-                echo ('Products Page');
-            }
-            ?>
-        </h1>
+
+  <section class="hero" style="background-image: url('images/Spacebackground2.gif');">
+        <section class="product-page-space">
+            <!-- <img src="{{asset('primg/Spacebackground2.gif')}}" style="background-size: cover;
+    background-position: center;"> -->
+            <h1 class="product-page-header">
+                <?php
+                $pTitle = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
+                $getTitle = array_pop($pTitle);
+                if ($getTitle == 'smartphones') {
+                    echo ('Smartphones');
+                } else if ($getTitle == 'laptops') {
+                    echo ('Laptops');
+                } else if ($getTitle == 'tablets') {
+                    echo ('Tablets');
+                } else if ($getTitle == 'tvs') {
+                    echo ('TVs');
+                } else if ($getTitle == 'cameras') {
+                    echo ('Cameras');
+                } else {
+                    echo ('Products Page');
+                }
+                ?>
+            </h1>
+        </section>
     </section>
+    <form method="GET" action="{{url('searchProduct')}}" role="search" class="product-searchbar-container">
+        <input type="search" name="search" value="" placeholder="Search Product" class="product-searchbar">
+        <button type="submit" class="product-searchbar-btn fa fa-search" style="font-size: 2.5em;"></button>
+
+
+
+    </form>
 
     <div class="product-container">
 

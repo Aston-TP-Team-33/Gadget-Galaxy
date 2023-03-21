@@ -12,6 +12,10 @@
                 <a href="{{('contact')}}" class="footer_txt">Contact Us</a>
                 <br>
                 <a href="{{('about')}}" class="footer_txt">About Us</a>
+                <br>
+                <a href="{{ route('login') }}" class="footer_txt">Log in</a>
+                <br>
+                <a href="{{ route('register') }}" class="footer_txt">Register</a>
             </blockquote>
         </div>
         <div>
