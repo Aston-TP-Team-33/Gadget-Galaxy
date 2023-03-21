@@ -386,7 +386,7 @@ color: rgb(146, 4, 241);
   padding: 20px;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgb(255, 255, 255);
 }
 
 .categories .col-6:hover {
