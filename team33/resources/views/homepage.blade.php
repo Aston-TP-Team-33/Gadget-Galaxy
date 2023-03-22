@@ -122,32 +122,56 @@
       <div class="row justify-content-center">
         <div class="col-6 col-sm-4 col-md-2 mb-4 text-center">
           <form action="{{route('product.category',['category'=>'smartphones'])}}" method="GET">
-            <img src="images/phoneicon.png" alt="Smartphones" class="img-fluid mb-2">
-            <a href="" class="drop-txt-btn"> <button class="drop-txt-btn" type="submit">Smartphones</button></a>
+            <a href="" class="drop-txt-btn">
+              <button class="drop-txt-btn" type="submit">
+                <img src="images/phoneicon.png" alt="Smartphones" class="img-fluid mb-2">
+              </button>
+            </a>
+            <a href="" class="drop-txt-btn"><button class="drop-txt-btn" type="submit">Smartphones</button></a>
           </form>
         </div>
+
         <div class="col-6 col-sm-4 col-md-2 mb-4 text-center">
           <form action="{{route('product.category',['category'=>'laptops'])}}" method="GET">
-            <img src="images/laptopicon.png" alt="Laptops" class="img-fluid mb-2">
-            <a href="" class="drop-txt-btn"> <button class="drop-txt-btn" type="submit">Laptops</button></a>
+            <a href="" class="drop-txt-btn">
+              <button class="drop-txt-btn" type="submit">
+                <img src="images/laptopicon.png" alt="Laptops" class="img-fluid mb-2">
+              </button>
+            </a>
+            <a href="" class="drop-txt-btn"><button class="drop-txt-btn" type="submit">Laptops</button></a>
           </form>
         </div>
+
         <div class="col-6 col-sm-4 col-md-2 mb-4 text-center">
           <form action="{{route('product.category',['category'=>'tablets'])}}" method="GET">
-            <img src="images/tableticon2.png" alt="Tablets" class="img-fluid mb-2">
-            <a href="" class="drop-txt-btn"> <button class="drop-txt-btn" type="submit">Tablets</button></a>
+            <a href="" class="drop-txt-btn">
+              <button class="drop-txt-btn" type="submit">
+                <img src="images/tableticon2.png" alt="Tablets" class="img-fluid mb-2">
+              </button>
+            </a>
+            <a href="" class="drop-txt-btn"><button class="drop-txt-btn" type="submit">Tablets</button></a>
           </form>
         </div>
+
         <div class="col-6 col-sm-4 col-md-2 mb-4 text-center">
           <form action="{{route('product.category',['category'=>'tvs'])}}" method="GET">
-            <img src="images/tvicon.png" alt="TVs" class="img-fluid mb-2">
-            <a href="" class="drop-txt-btn"> <button class="drop-txt-btn" type="submit">TVs</button></a>
+            <a href="" class="drop-txt-btn">
+              <button class="drop-txt-btn" type="submit">
+                <img src="images/tvicon.png" alt="TVs" class="img-fluid mb-2">
+              </button>
+            </a>
+            <a href="" class="drop-txt-btn"><button class="drop-txt-btn" type="submit">TVs</button></a>
           </form>
         </div>
+
         <div class="col-6 col-sm-4 col-md-2 mb-4 text-center">
           <form action="{{route('product.category',['category'=>'cameras'])}}" method="GET">
-            <img src="images/cameraicon.png" alt="Cameras" class="img-fluid mb-2">
-            <a href="" class="drop-txt-btn"> <button class="drop-txt-btn" type="submit">Cameras</button></a>
+            <a href="" class="drop-txt-btn">
+              <button class="drop-txt-btn" type="submit">
+                <img src="images/cameraicon.png" alt="Cameras" class="img-fluid mb-2">
+              </button>
+            </a>
+            <a href="" class="drop-txt-btn"><button class="drop-txt-btn" type="submit">Cameras</button></a>
           </form>
 
         </div>

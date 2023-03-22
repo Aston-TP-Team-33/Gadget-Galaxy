@@ -24,17 +24,19 @@
                 <a href="https://twitter.com/?lang=en" target="_blank">
                     <img src="{{asset('images/twitter.png')}}" class="footer_images" />
                 </a>
-
+                <br>
                 <a href="https://en-gb.facebook.com/" target="_blank">
                     <img src="{{asset('images/facebook.png')}}" class="footer_images" />
                 </a>
-
+                <br>
                 <a href="https://www.instagram.com/" target="_blank">
                     <img src="{{asset('images/instagram.png')}}" class="footer_images" />
                 </a>
             </blockquote>
         </div>
     </section>
-
-    <p class="footer_txt"><a href="" class="footer_txt">Gadget Galaxy</a> &copy; 2023</p>
+    <div id="footer_logo_location">
+        <a href="{{route('homepage')}}"><img src="{{asset('images/small-logo.png')}}" class="footer_logo" /></a>
+    </div>
+    <p class="footer_txt">Gadget Galaxy &copy; 2023</p>
 </footer>
