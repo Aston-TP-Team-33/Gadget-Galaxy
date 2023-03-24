@@ -35,10 +35,10 @@
   <div class="about-us">
     <h2>Our Values</h2>
     <ul>
-      <li>Lorem ipsum dolor sit amet</li>
-      <li>Consectetur adipiscing elit</li>
-      <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-      <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+      <li>Customer satisfaction: We're dedicated to providing our customers with the best possible experience.</li>
+      <li>Quality: We only sell high-quality products from reputable brands.</li>
+      <li>Affordability: We believe that technology should be accessible to everyone, so we offer competitive prices.</li>
+      <li>Integrity: We're committed to conducting business with honesty and transparency.</li>
     </ul>
   </div>
 
