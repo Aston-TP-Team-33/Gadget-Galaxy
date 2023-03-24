@@ -19,7 +19,7 @@
 
   <div class="about-us">
     <h2>Our Story</h2>
-    <pGadget Galaxy is the one stop shop for all things tech related. We specialize in providing our customers with the latest and greatest electronics. If you're looking for a new smartphone, laptop or gaming console, we've got you covered.</p>
+    <p>Gadget Galaxy is the one stop shop for all things tech related. We specialize in providing our customers with the latest and greatest electronics. If you're looking for a new smartphone, laptop or gaming console, we've got you covered.</p>
   </div>
 
   <div class="about-us">
