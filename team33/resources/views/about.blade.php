@@ -24,8 +24,7 @@
 
   <div class="about-us">
     <h2>Our Team</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nulla nec congue ullamcorper. Vestibulum non mi eget augue efficitur faucibus nec quis mi. Suspendisse vel lacinia nisl. </p>
-    <p>Mauris et varius velit, sit amet dictum enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc auctor turpis et dolor maximus efficitur. Vivamus malesuada nisi vel sem venenatis sollicitudin.</p>
+    <p>Our wonderful team consists of tech enthusiasts who are passionate about providing the best possible experience for our customers. We pride ourselves on our excellent customer service and our commitment to providing high-quality products at competitive prices.</p>
   </div>
 
   <div class="about-us">
