@@ -29,7 +29,7 @@
 
   <div class="about-us">
     <h2>Our Mission</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nulla nec congue ullamcorper. Vestibulum non mi eget augue efficitur faucibus nec quis mi. Suspendisse vel lacinia nisl. </p>
+    <p>At Gadget Galaxy, we believe that technology should be accessible to everyone and has the power to transform lives. We're committed to providing our customers with gadgets and electronics at affordable prices.</p>
   </div>
 
   <div class="about-us">
