@@ -664,3 +664,24 @@ color: rgb(146, 4, 241);
   }
 }
 
+.search-box {
+  position: relative;
+  float: left;
+  margin: 10px auto;
+  width: 300px;
+}
+
+#search {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 4px solid #000000;
+  border-radius: 20px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+#search:focus {
+  border-color: #28880a;
+}
