@@ -15,6 +15,15 @@
 <div class = "admin-page">
     <main>
         <h1>Welcome Admin!</h1>
+        <div class="search-box">
+        <input type="text" id="search" placeholder="Search...">
+        </div>
+
+        &nbsp;
+        <br>
+        &nbsp;
+        <br>
+        &nbsp;
 
         <section class="users">
             <h2>List of Users</h2>
@@ -74,6 +83,7 @@
 
         <section class="orders">
             <h2>All Orders from Users</h2>
+            
             <table class="content-table">
                 <thead>
                     <tr>
@@ -124,6 +134,30 @@
                     @endforeach
                 </tbody>
             </table>
+            <script>
+    // Get the input element
+    const searchInput = document.getElementById('search');
+
+    // Add event listener on input element
+    searchInput.addEventListener('input', function() {
+        // Get the filter value
+        const filterValue = searchInput.value.toUpperCase();
+
+        // Get the table rows
+        const tableRows = document.querySelectorAll('.content-table tbody tr');
+
+        // Loop through table rows and hide/show based on filter value
+        tableRows.forEach(function(row) {
+            const data = row.textContent.toUpperCase();
+            if (data.indexOf(filterValue) > -1) {
+                row.style.display = '';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    });
+</script>
+
         </section>
 
         <section class="queries">
