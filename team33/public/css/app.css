@@ -74,19 +74,6 @@ h6 {
 
 }
 
-/*--banner section--*/
-
-.banners {
-  background-color: #f5f5f5;
-}
-
-.banners img {
-  width: 50%;
-  height: 600px;
-}
-
-
-
 /* ---featured product senction--- */
 .featured-products {
   background-color: white;
@@ -406,5 +393,274 @@ color: rgb(146, 4, 241);
   align-items: center;
   justify-content: center;
   display: flex;
+}
+
+/*--USER ACCOUNT PAGE--*/
+
+.my-account {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: rgb(40, 42, 61);
+  color: white;
+}
+
+.my-account .container {
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  padding: 40px 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.my-account h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.my-account h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.my-account .btn {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.my-account .btn:hover {
+  background-color: rgb(160, 160, 160);
+}
+
+.my-account .form {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Specific Styles */
+.my-account .total-text {
+  color: black;
+}
+
+.my-account .products h1,
+.my-account .checkoutSec h3,
+.my-account .Myorderhistory h3 {
+  margin-bottom: 5px;
+}
+
+.my-account .products table,
+.my-account .checkoutSec table,
+.my-account .Myorderhistory table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.my-account .products th,
+.my-account .products td,
+.my-account .checkoutSec td,
+.my-account .Myorderhistory td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  color: black;
+  background-color: white;
+}
+
+.my-account .products tr:first-child td {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+
+/*Rounding Table Borders*/
+.my-account .products table,
+.my-account .checkoutSec table,
+.my-account .Myorderhistory table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 5px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.my-account .products tr:first-child td,
+.my-account .checkoutSec tr:first-child td,
+.my-account .Myorderhistory tr:first-child td {
+  border-top: none;
+}
+
+.my-account .products tr:last-child td,
+.my-account .checkoutSec tr:last-child td,
+.my-account .Myorderhistory tr:last-child td {
+  border-bottom: none;
+}
+
+.my-account .products tr td:first-child,
+.my-account .checkoutSec tr td:first-child,
+.my-account .Myorderhistory tr td:first-child {
+  border-left: none;
+}
+
+.my-account .products tr td:last-child,
+.my-account .checkoutSec tr td:last-child,
+.my-account .Myorderhistory tr td:last-child {
+  border-right: none;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .my-account .container {
+    padding: 0 10px;
+  }
+
+  .my-account .checkoutSec td,
+  .my-account .Myorderhistory td {
+    width: auto;
+  }
+}
+
+
+/*--ADMIN PAGE--*/
+
+.admin-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: rgb(40, 42, 61);
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+.admin-page h1,
+.admin-page h2 {
+  margin-bottom: 20px;
+}
+
+.admin-page h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.admin-page h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.admin-page .content-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 5px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+.admin-page .content-table th,
+.admin-page .content-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  color: black;
+}
+
+.admin-page .content-table thead tr {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.admin-page .content-table tr:first-child th,
+.admin-page .content-table tr:first-child td {
+  border-top: none;
+}
+
+.admin-page .content-table tr:last-child th,
+.admin-page .content-table tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-page .content-table tr th:first-child,
+.admin-page .content-table tr td:first-child {
+  border-left: none;
+}
+
+.admin-page .content-table tr th:last-child,
+.admin-page .content-table tr td:last-child {
+  border-right: none;
+}
+
+
+.admin-page .form {
+  padding: 4px 8px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.admin-page .btn {
+  display: inline-block;
+  background-color: #73b59e;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.admin-page .btn:hover {
+  background-color: #66a58a;
+}
+
+.admin-page select {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .admin-page .content-table th,
+  .admin-page .content-table td {
+    padding: 5px;
+  }
+
+  .admin-page .form {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+
+  .admin-page .btn {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
 }
 
