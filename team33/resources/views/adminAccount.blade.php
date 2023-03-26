@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ asset('css/app.css?v=').time() }}" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/icon_logo.svg">
     <title>Admin Dashboard</title>
 </head>
 

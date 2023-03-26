@@ -18,8 +18,8 @@
 <body>
 
 
-    @include('nav&footer/nav')
-    <h1>Register Page</h1>
+
+    <!-- <h1>Register Page</h1> -->
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
@@ -94,14 +94,14 @@
             </div>
         </div>
 </body>
-
+<!-- 
 <footer>
     <br>
     <br>
     <br>
     <br>
     @include('nav&footer/footer')
-</footer>
+</footer> -->
 
 
 </html>
