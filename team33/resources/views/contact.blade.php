@@ -70,26 +70,25 @@
 <body>
   @include('nav&footer/nav')
   <div class="form-container">
-    <form class="contact-form">
+    <form action = "{{url('/contactForm')}}" class="contact-form">
+    @csrf
       <h1>Contact Us</h1>
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" required>
+        <input type="text" id="name" placeholder="Name" class="box" name="name1" required>
       </div>
   
       <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" required>
+        <input type="text" id="email" placeholder="Enter Email" class="box" name="email1" required>
       </div>
   
       <div class="form-group">
         <label for="query">Query</label>
-        <textarea name="query" id="query" required></textarea>
+        <textarea id="query" placeholder="Query" class="box" name="query1" required></textarea>
       </div>
   
-      <div class="form-group">
-        <input type="submit" value="Send">
-      </div>
+      <button type="submit" onclick="alert('Thanks for you message)" class="btn">Send Query</button>
     </form>
   </div>
 
