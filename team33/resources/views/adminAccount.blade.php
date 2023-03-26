@@ -56,6 +56,7 @@
                         <td>{{$product['id']}}</td>
                         <td>{{$product->title}}</td>
                         <td>{{$product->description}}</td>
+                        <td>{{$product->quantity}}</td>
                         <td>
                             <form action="{{url('updatequantity', $product->id)}}" method="POST">
                                 @csrf

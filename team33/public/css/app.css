@@ -387,7 +387,7 @@ h6 {
 }
 
 
-/*--Admin Page--*/
+/*--ADMIN PAGE--*/
 
 .admin-page {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -405,8 +405,9 @@ h6 {
 }
 
 .admin-page h1 {
-  font-size: 24px;
+  font-size: 40px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .admin-page h2 {
@@ -440,25 +441,21 @@ h6 {
   font-weight: bold;
 }
 
-/* Remove border-top from the first row */
 .admin-page .content-table tr:first-child th,
 .admin-page .content-table tr:first-child td {
   border-top: none;
 }
 
-/* Remove border-bottom from the last row */
 .admin-page .content-table tr:last-child th,
 .admin-page .content-table tr:last-child td {
   border-bottom: none;
 }
 
-/* Remove border-left from the first column */
 .admin-page .content-table tr th:first-child,
 .admin-page .content-table tr td:first-child {
   border-left: none;
 }
 
-/* Remove border-right from the last column */
 .admin-page .content-table tr th:last-child,
 .admin-page .content-table tr td:last-child {
   border-right: none;
