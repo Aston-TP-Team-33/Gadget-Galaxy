@@ -35,7 +35,7 @@
             <div class="block-body">
               <h5 class="block-title">Iphone 14 Pro Max</h5>
               <p class="block-text">£1149</p>
-              <a href="{{route('productsPage')}}" class="btn btn-primary">Product Page</a>
+              <a href="{{route('productsPage')}}" class="btn btn-primary">Products Page</a>
             </div>
           </div>
         </div>
@@ -45,7 +45,7 @@
             <div class="block-body">
               <h5 class="block-title">Dell XPS 13</h5>
               <p class="block-text">£999</p>
-              <a href="{{route('productsPage')}}" class="btn btn-primary">Product Page</a>
+              <a href="{{route('productsPage')}}" class="btn btn-primary">Products Page</a>
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@
             <div class="block-body">
               <h5 class="block-title">Nikon D750</h5>
               <p class="block-text">£999</p>
-              <a href="{{route('productsPage')}}" class="btn btn-primary">Product Page</a>
+              <a href="{{route('productsPage')}}" class="btn btn-primary">Products Page</a>
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@
             <div class="block-body">
               <h5 class="block-title">LG 55" OLED TV</h5>
               <p class="block-text">£1,499</p>
-              <a href="{{route('productsPage')}}" class="btn btn-primary">Product Page</a>
+              <a href="{{route('productsPage')}}" class="btn btn-primary">Products Page</a>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@
             <div class="block-body">
               <h5 class="block-title">Ipad Pro 11" 2022</h5>
               <p class="block-text">£899</p>
-              <a href="{{route('productsPage')}}" class="btn btn-primary">Product Page</a>
+              <a href="{{route('productsPage')}}" class="btn btn-primary">Products Page</a>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@
             <div class="block-body">
               <h5 class="block-title">Samsung Galaxy S22 Ultra</h5>
               <p class="block-text">£1249</p>
-              <a href="{{route('productsPage')}}" class="btn btn-primary">Product Page</a>
+              <a href="{{route('productsPage')}}" class="btn btn-primary">Products Page</a>
             </div>
           </div>
         </div>
