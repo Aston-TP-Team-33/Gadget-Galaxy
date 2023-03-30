@@ -1,12 +1,14 @@
 # Gadget-Galaxy
+#### Gadget-galaxy is a fully functional online tech eCommerce where you can buy smrtphones, tablets, tvs, laptops and cameras which has a modern and appealing design for young adults.
 In this repository you you can find a website project made with Laravel. This website has different features such as:
 - A fully functional Basket
 - A stock management system
-- Log in and registration system
-- An admin page
+- Customer log in and registration system
+- An admin page*
 - A filtering system and a search bar
 - A home, product, contact and about us page
 - a fully functional navigation bar and footer
+*in the admin page you can edit stock level, update orders status and a list of registered users we also have developed a dedicated admin java application from whre you do these and many more things (`https://github.com/Aston-TP-Team-33/Inventory-Management-System`).\
 In this file you will know how to download and use the code in this repository
 
 ## Essential softwares 
